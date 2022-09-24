@@ -6,14 +6,16 @@ export default function LinkItem({ href, title }) {
   const isActive = location.pathname == href;
 
   return (
+    <div className="grow h-full flex items-center justify-center">
     <a href={href}>
       <div
-        className={`text-xs flex items-center cursor-pointer hover:scale-110 transition duration-100 font-novaregular text-blac ${
+        className={`text-xs flex items-center cursor-pointer hover:scale-110 transition duration-100 font-novaregular text-black  ${
           isActive ? "scale-105 underline" : ""
         }`}
       >
         {title}
       </div>
     </a>
+    </div>
   );
 }

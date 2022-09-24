@@ -5,10 +5,10 @@ import Navigation from "../../components/navigation";
 export default function StaffDisplay() {
 
   const tabs = [
-    { title: "GALLERY", href: "/" },
-    { title: "MY FLOCK", href: "/flock" },
-    { title: "ABOUT", href: "/about" },
-    { title: "LOGOUT", href: "/logout" },
+    { title: "Home", href: "/" },
+    { title: "Translate", href: "/" },
+    { title: "Food", href: "/" },
+
   ];
 
   return (

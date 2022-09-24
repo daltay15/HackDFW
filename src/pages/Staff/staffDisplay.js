@@ -5,9 +5,8 @@ import Navigation from "../../components/navigation";
 export default function StaffDisplay() {
 
   const tabs = [
-    { title: "Home", href: "/" },
-    { title: "Translate", href: "/" },
-    { title: "Food", href: "/" },
+    { title: "Home", href: "/staffdisplay" },
+    { title: "Food", href: "/menu" },
 
   ];
 

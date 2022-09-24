@@ -1,9 +1,26 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import { withRouter, useHistory } from "react-router-dom";
+import "react-toastify/dist/ReactToastify.css";
 
-export default function patientLogin() {
+export default function PatientLogin() {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const history = useHistory();
   return (
     <>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
       <div className="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-md space-y-8">
           <div>
@@ -68,14 +85,19 @@ export default function patientLogin() {
             </div>
 
             <div>
-              <Link to="/patientdisplay">
-                <button
-                  type="submit"
-                  className="group relative flex w-full justify-center rounded-md border border-transparent bg-red-600 py-2 px-4 text-sm font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                >
-                  Sign in
-                </button>
-              </Link>
+              <button
+                type="submit"
+                className="group relative flex w-full justify-center rounded-md border border-transparent bg-red-600 py-2 px-4 text-sm font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                onClick={() => {
+                  if (username === "nshetty6" && password === "12345") {
+                    history.push("/patientDisplay");
+                  } else {
+                    toast.error("Invalid Username or Password");
+                  }
+                }}
+              >
+                Sign in
+              </button>
             </div>
           </form>
         </div>

@@ -1,5 +1,5 @@
 {
-  "homepage": "https://daltay15.github.io/Cloud-Website",
+  "homepage": "https://daltay15.github.io/",
   "name": "hack-dfw",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +11,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
+    "react-router": "^6.4.1",
+    "react-router-dom": "5.2",
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.7",
     "web-vitals": "^2.1.4"

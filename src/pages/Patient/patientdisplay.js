@@ -5,7 +5,7 @@ import Navigation from "../../components/navigation";
 export default function PatientDisplay() {
 
   const tabs = [
-    { title: "Home", href: "/patitnetdisplay" },
+    { title: "Home", href: "/patientdisplay" },
     { title: "Food", href: "/menu" },
     { title: "Translators", href: "/translate" },
 

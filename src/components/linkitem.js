@@ -6,7 +6,7 @@ export default function LinkItem({ href, title }) {
   const isActive = location.pathname == href;
 
   return (
-    <div  className={`grow basis-0 h-full flex items-center justify-center border-t border-gray-400 border-r ${isActive ? "bg-gray-300" : "bg-gray-200"}`}>
+    <a  href={href} className={`grow basis-0 h-full flex items-center justify-center border-t border-gray-400 border-r ${isActive ? "bg-gray-300" : "bg-gray-200"}`}>
     <a href={href}>
       <div
         className={`text-md flex items-center cursor-pointer hover:scale-110 transition duration-100 font-novaregular text-black  ${
@@ -16,6 +16,6 @@ export default function LinkItem({ href, title }) {
         {title}
       </div>
     </a>
-    </div>
+    </a>
   );
 }

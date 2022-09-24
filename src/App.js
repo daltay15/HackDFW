@@ -9,7 +9,7 @@ import Menu from "./pages/Staff/menu";
 import visitationLog from "./pages/Patient/visitationLog";
 import OutpatientChecklist from "./pages/Patient/outpatientChecklist";
 import Translate from "./pages/Staff/translate";
-
+import Admin from "./pages/Admin/admin";
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
           <Route path="/visitationlog" component={visitationLog} />
           <Route path="/outpatientchecklist" component={OutpatientChecklist} />
           <Route path="/translate" component={Translate} />
+          <Route path="/admin" component={Admin} />
         </Switch>
       </div>
     </Router>

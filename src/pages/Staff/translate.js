@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Navigation from "../../components/navigation";
+import TranslateView from "../../views/TranslateView";
 
 
 export default function Translate() {
@@ -13,10 +14,7 @@ export default function Translate() {
 
   return (
     <div className="h-screen w-screen bg-black">
-    <div className="flex justify-center items-center bg-gray-200 h-full">
-      Staff home page
-      
-    </div>
+    <TranslateView/>
     <Navigation tabs={tabs}/>
     </div>
   );

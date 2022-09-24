@@ -5,6 +5,9 @@ import PatientDisplay from "./pages/Patient/patientdisplay";
 import PatientLogin from "./pages/Patient/patientLogin";
 import staffLogin from "./pages/Staff/staffLogin";
 import StaffDisplay from "./pages/Staff/staffDisplay";
+import Menu from "./pages/Staff/menu";
+import visitationLog from "./pages/Patient/visitationLog";
+import OutpatientChecklist from "./pages/Patient/outpatientChecklist";
 
 function App() {
   return (
@@ -16,6 +19,9 @@ function App() {
           <Route path="/patientlogin" component={PatientLogin} />
           <Route path="/stafflogin" component={staffLogin} />
           <Route path="/staffdisplay" component={StaffDisplay} />
+          <Route path="/menu" component={Menu} />
+          <Route path="/visitationlog" component={visitationLog} />
+          <Route path="/outpatientchecklist" component={OutpatientChecklist} />
         </Switch>
       </div>
     </Router>

@@ -1,20 +1,14 @@
 import React from "react";
 
-const Navigation = () => {
+function Navigation(){
   const Menus = [{ name: "Home", icon: "home-outlnie", dis: "translate-x-0" }];
   return (
-    <div className="bg-white max-h-[4.4rem] px-6 rounded-t-xl">
-      <ul>
-        {Menus.map((menu) => (
-          <li className="inline-block">
-            <a href="#" className="flex items-center">
-              <span className="material-icons-outlined">{menu.icon}</span>
-              <span className="text-sm">{menu.name}</span>
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
+    //Create a footer which will go at the bottom of the screen//
+    <footer className="absolute h-[126px] bg-white text-black bottom-0 w-full">
+      <div className="w-full h-full flex items-center justify-center">
+        Hello Demir!
+      </div>
+    </footer>
   );
 };
 

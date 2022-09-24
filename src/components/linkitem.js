@@ -8,7 +8,7 @@ export default function LinkItem({ href, title }) {
   return (
     <a href={href}>
       <div
-        className={`text-xs flex items-center cursor-pointer hover:scale-110 transition duration-100 font-novaregular text-black ${
+        className={`text-xs flex items-center cursor-pointer hover:scale-110 transition duration-100 font-novaregular text-blac ${
           isActive ? "scale-105 underline" : ""
         }`}
       >

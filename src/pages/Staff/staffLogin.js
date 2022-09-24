@@ -53,7 +53,7 @@ export default function StaffLogin() {
               Sign in to your staff account
             </h2>
           </div>
-          <form className="mt-8 space-y-6" action="#" method="POST">
+          <div className="mt-8 space-y-6">
             <input type="hidden" name="remember" defaultValue="true" />
             <div className="-space-y-px rounded-md shadow-sm">
               <div>
@@ -108,17 +108,18 @@ export default function StaffLogin() {
 
             <div>
               <button
-                type="submit"
                 className="group relative flex w-full justify-center rounded-md border border-transparent bg-red-600 py-2 px-4 text-sm font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                onClick={(e) => {
+                onClick={() => {
                   //THIS IS SO BAD
                   //In a production environment we'd obviously use proper authentication
-                  //Filter to see if the username and password match otherwise show an error
+                  //Filter to see if the username and password match otherwise show an error\
+
                   const doctor = doctors.filter(
                     (doctor) =>
-                      doctor.username === username &&
-                      doctor.password === password
+                      doctor.username == username && doctor.password == password
                   );
+
+                  console.log(doctors.length);
 
                   if (doctor.length === 0) {
                     toast.error("Invalid username or password");
@@ -130,7 +131,7 @@ export default function StaffLogin() {
                 Sign in
               </button>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </>

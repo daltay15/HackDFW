@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
-const Home = () => {
+export default function CheckIn() {
   return <div className="font-bold">Hello world</div>;
 };
 
-export default Home;

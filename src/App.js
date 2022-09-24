@@ -1,9 +1,9 @@
-import Home from "./components/Home";
+import CheckIn from "./pages/checkin";
 
 function App() {
   return (
     <>
-      <Home />
+      <CheckIn />
     </>
   );
 }

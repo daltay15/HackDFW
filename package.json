@@ -42,9 +42,11 @@
     ]
   },
   "devDependencies": {
+    "auto": "^10.37.6",
     "autoprefixer": "^10.4.7",
     "gh-pages": "^4.0.0",
-    "postcss": "^8.4.14",
-    "tailwindcss": "^3.1.4"
+    "postcss": "^8.4.16",
+    "prefixer": "^0.0.3",
+    "tailwindcss": "^3.1.8"
   }
 }

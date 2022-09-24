@@ -1,32 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { useDoctors } from "../../hooks/useDoctors";
 import { withRouter, useHistory } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { PageContext } from "../../hooks/pageContext";
 
 export default function StaffLogin() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [auth, setAuth] = useContext(PageContext);
 
   const { doctors } = useDoctors();
   const history = useHistory();
 
   function handleClick() {
     history.push("/staffdisplay");
+    setAuth({ username: username, isDoctor: true });
+    window.sessionStorage.setItem("username", username);
+    window.sessionStorage.setItem("isDoctor", true);
   }
-
-  const Login = withRouter(({ history }) => (
-    <button
-      type="button"
-      className="group relative flex w-full justify-center rounded-md border border-transparent bg-red-600 py-2 px-4 text-sm font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-      onClick={() => {
-        history.push("/new-location");
-      }}
-    >
-      Sign In
-    </button>
-  ));
 
   return (
     <>

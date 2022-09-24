@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/home";
 import PatientDisplay from "./pages/Patient/patientdisplay";
+import PatientLogin from "./pages/Patient/patientLogin";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/patientdisplay" component={PatientDisplay} />
+          <Route path="/patientlogin" component={PatientLogin} />
         </Switch>
       </div>
     </Router>

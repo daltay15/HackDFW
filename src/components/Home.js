@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 
-const Navbar = () => {
+const Home = () => {
   return <div className="font-bold">Hello world</div>;
 };
 
-export default Navbar;
+export default Home;

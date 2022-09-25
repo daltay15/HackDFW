@@ -2,13 +2,11 @@ import React, { useState } from "react";
 
 import Navigation from "../../components/navigation";
 import PatientView from "../../views/PatientView";
-import PatientEntry from "../../components/patientEntry";
 
 export default function PatientDisplay() {
   const tabs = [
-    { title: "Home", href: "/patientdisplay" },
+    { title: "Visitation", href: "/patientdisplay" },
     { title: "Outpatient", href: "/outpatientchecklist" },
-    { title: "Visitation", href: "/visitationlog" },
   ];
 
   return (

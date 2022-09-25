@@ -9,17 +9,19 @@ import { PageContext } from "../../hooks/pageContext";
 export default function StaffLogin() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [auth, setAuth] = useContext(PageContext);
+  const [userToken, setUserToken] = useContext(PageContext);
 
   const { doctors } = useDoctors();
   const history = useHistory();
 
   function handleClick() {
     history.push("/staffdisplay");
-    setAuth({ username: username, isDoctor: true });
+    setUserToken({ username: username, isDoctor: true });
     window.sessionStorage.setItem("username", username);
     window.sessionStorage.setItem("isDoctor", true);
   }
+  console.log("WHAT?!");
+  console.log(userToken.username);
 
   return (
     <>

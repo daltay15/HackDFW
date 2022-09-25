@@ -15,15 +15,16 @@ import { PageContext } from "./hooks/pageContext";
 function App() {
   const [userToken, setUserToken] = useState({
     username: "",
-    isDoctor: true,
+    isDoctor: false,
   });
 
   //Check to see if there's data for userName and isDoctor in our session storage
-
+  console.log(window.sessionStorage.getItem("username"));
   if (
     window.sessionStorage.getItem("username") != null &&
     userToken.username == ""
   ) {
+    console.log("SETTING USER TOKEN FROM STORAGE");
     setUserToken({
       username: window.sessionStorage.getItem("username"),
       isDoctor: window.sessionStorage.getItem("isDoctor"),
@@ -34,7 +35,7 @@ function App() {
   const [doctorToken, setDoctorToken] = useState("");
 
   return (
-    <PageContext.Provider value={[doctorToken, setDoctorToken]}>
+    <PageContext.Provider value={[userToken, setUserToken]}>
       <Router>
         <div className="min-h-screen bg-white text-black dark:bg-[#121212]  dark:text-gray-100/90">
           <Switch>

@@ -12,7 +12,7 @@ export default function PatientLogin() {
   const history = useHistory();
   const [userToken, setUserToken] = useContext(PageContext);
   function handleClick() {
-    history.push("/staffdisplay");
+    history.push("/patientdisplay");
     setUserToken({ username: "nshetty6", isDoctor: false });
     window.sessionStorage.setItem("username", "nshetty6");
     window.sessionStorage.setItem("isDoctor", false);

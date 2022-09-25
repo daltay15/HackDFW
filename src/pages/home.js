@@ -16,17 +16,17 @@ export default function Home() {
           {greetingTime(new Date())}, who will you be logging in as today?
         </div>
 
-        <div className="mx-4 md:w-[25%]">
+        <div className="mx-4 md:w-[25%] flex items-center justify-center flex-col">
           <Link to="/patientlogin">
-            <div className="flex items-center justify-center bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-20 border border-red-700 rounded mb-16">
-              <button>Patient</button>
-            </div>
+            <button className="flex items-center justify-center bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-20 border border-red-700 rounded mb-16">
+              Patient
+            </button>
           </Link>
 
           <Link to="stafflogin">
-            <div className="flex items-center justify-center bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-20 border border-red-700 rounded mb-16">
-              <button>Staff</button>
-            </div>
+            <button className="flex items-center justify-center bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-20 border border-red-700 rounded mb-16">
+              Staff
+            </button>
           </Link>
         </div>
       </div>

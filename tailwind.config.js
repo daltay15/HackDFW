@@ -2,7 +2,6 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 /** @type {import('tailwindcss').Config} */
 
-
 module.exports = {
   content: [
     "./src/components/**/*.{js,ts,jsx,tsx}",
@@ -11,6 +10,9 @@ module.exports = {
     "./node_modules/tw-elements/dist/js/**/*.js",
   ],
   theme: {
+    backgroundImage: {
+      hosptial: "url('../public/ChildrensHospital.jpg')",
+    },
     extend: {
       screens: {
         // xxs: '340px',
@@ -35,4 +37,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};

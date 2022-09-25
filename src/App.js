@@ -11,6 +11,7 @@ import Translate from "./pages/Staff/translate";
 import Admin from "./pages/Admin/admin";
 import { useState, React } from "react";
 import { PageContext } from "./hooks/pageContext";
+import CheckedIn from "./pages/Staff/checkedIn";
 
 function App() {
   const [userToken, setUserToken] = useState({
@@ -52,6 +53,7 @@ function App() {
             />
             <Route path="/translate" component={Translate} />
             <Route path="/admin" component={Admin} />
+            <Route path="/checkedin" component={CheckedIn} />
           </Switch>
         </div>
       </Router>

@@ -17,17 +17,17 @@ export default function Home() {
         </div>
 
         <div className="mx-4 md:w-[25%]">
-          <div className="flex items-center justify-center bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-20 border border-red-700 rounded mb-16">
-            <Link to="/patientlogin">
+          <Link to="/patientlogin">
+            <div className="flex items-center justify-center bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-20 border border-red-700 rounded mb-16">
               <button>Patient</button>
-            </Link>
-          </div>
+            </div>
+          </Link>
 
-          <div className="flex items-center justify-center bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-20 border border-red-700 rounded mb-16">
-            <Link to="stafflogin">
+          <Link to="stafflogin">
+            <div className="flex items-center justify-center bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-20 border border-red-700 rounded mb-16">
               <button>Staff</button>
-            </Link>
-          </div>
+            </div>
+          </Link>
         </div>
       </div>
     </div>

@@ -43,7 +43,7 @@ export default function PatientLogin() {
               Sign in to your account
             </h2>
           </div>
-          <form className="mt-8 space-y-6" action="#" method="POST">
+          <div className="mt-8 space-y-6">
             <input type="hidden" name="remember" defaultValue="true" />
             <div className="-space-y-px rounded-md shadow-sm">
               <div>
@@ -109,7 +109,7 @@ export default function PatientLogin() {
                 Sign in
               </button>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </>

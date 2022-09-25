@@ -12,7 +12,9 @@ export default function StaffView() {
 
   return (
     <div className="flex justify-center items-center bg-gray-200 h-full">
-      Staff home page
+      <div className="text-xl font-bold items-center justify-center flex text-center whitespace-pre">
+        Welcome {auth[0].username}!
+      </div>
     </div>
   );
 }

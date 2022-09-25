@@ -45,7 +45,7 @@ export default function StaffLogin() {
               alt="Children's Health Logo"
             />
             <h2 className="mt-10 text-center text-3xl font-bold tracking-tight text-gray-900">
-              Sign in to your staff account
+              Staff Login
             </h2>
           </div>
           <div className="mt-8 space-y-6">

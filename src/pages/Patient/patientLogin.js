@@ -50,6 +50,7 @@ export default function PatientLogin() {
                 <input
                   className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                   placeholder="Username"
+                  onChange={(e) => setUsername(e.target.value)}
                 />
               </div>
               <div>
@@ -60,6 +61,7 @@ export default function PatientLogin() {
                   id="password"
                   name="password"
                   type="password"
+                  onChange={(e) => setPassword(e.target.value)}
                   autoComplete="current-password"
                   required
                   className="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
@@ -99,6 +101,7 @@ export default function PatientLogin() {
                 type="submit"
                 className="group relative flex w-full justify-center rounded-md border border-transparent bg-red-600 py-2 px-4 text-sm font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                 onClick={() => {
+                  console.log(username);
                   if (username === "nshetty6" && password === "12345") {
                     handleClick();
                   } else {

@@ -6,7 +6,7 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBY4OVEM_sDJc0P8ZiaZO-3yGmSJxpOcTw",
+  //apiKey: "AIzaSyBY4OVEM_sDJc0P8ZiaZO-3yGmSJxpOcTw",
   authDomain: "patient-portal-6e176.firebaseapp.com",
   projectId: "patient-portal-6e176",
   storageBucket: "patient-portal-6e176.appspot.com",
